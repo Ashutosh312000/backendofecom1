@@ -21,7 +21,7 @@ exports.postAddProduct = (req, res, next) => {
       description: description
     })
     .then(result => {
-      res.status(200).redirect('http://13.235.73.218:4000/frontendofbackend/fob_addproduct.html')
+      res.status(200).redirect('http://13.235.73.218:4000/fob_addproduct.html')
       .json({message:"Your Product is Created"})
     })
     .catch(err => {
